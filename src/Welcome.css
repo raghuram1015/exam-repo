@@ -1,0 +1,32 @@
+.welcome-container {
+  padding: 40px;
+  margin: 20px 0;
+  border: 3px solid #4CAF50;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+}
+
+.welcome-container h1 {
+  color: #2c3e50;
+  font-size: 36px;
+  margin: 0 0 10px 0;
+}
+
+.welcome-container p {
+  color: #555;
+  font-size: 18px;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
