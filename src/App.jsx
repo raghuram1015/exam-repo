@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Welcome from './Welcome';
+import Stack from './Stack';
 import './App.css';
 
 const App = () => {
@@ -59,12 +60,14 @@ const App = () => {
             placeholder="Enter your name"
             required
           />
-          <div style={{ display: 'flex', gap: 10, justifyContent: 'center' }}>
+
+          {/* Use Stack to place buttons side by side with spacing */}
+          <Stack spacing={12} justify="center" style={{ marginTop: 8 }}>
             <button type="submit" className="submit-button">Submit</button>
             <button type="button" className="contained-button" onClick={handleSave}>
               Save
             </button>
-          </div>
+          </Stack>
         </form>
       ) : null}
 
