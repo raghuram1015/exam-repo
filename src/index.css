@@ -133,6 +133,49 @@ button:focus-visible {
   background-color: #45a049;
 }
 
+.contained-button {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  transition: background-color 0.2s, transform 0.08s;
+}
+
+.contained-button:active {
+  transform: translateY(1px);
+}
+
+.contained-button:hover {
+  background-color: #1565c0;
+}
+
+/* Snackbar */
+.snackbar {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%) translateY(100%);
+  background: #323232;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 4px;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 240ms ease, opacity 240ms ease;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.snackbar.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
